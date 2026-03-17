@@ -82,23 +82,23 @@ export default () => {
                             </Button>
                         </TooltipTrigger>
                         <TooltipContent>
-                            <p>Generator a new email address</p>
+                            <p>Generate a new email address</p>
                         </TooltipContent>
                     </Tooltip>
                     <AlertDialog open={open} onOpenChange={setOpen}>
                         <AlertDialogContent>
                             <AlertDialogHeader>
                                 <AlertDialogTitle>
-                                    Are you absolutely sure?
+                                    Generate a new address?
                                 </AlertDialogTitle>
                                 <AlertDialogDescription>
-                                    This action cannot be undone. This will permanently delete your account and generate a new email address.
+                                    This will discard the current temporary address and create a new one. You will no longer receive mail at the old address.
                                 </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
                                 <AlertDialogCancel>Cancel</AlertDialogCancel>
                                 <AlertDialogAction asChild>
-                                    <Button onClick={generatorNewMail}>Yes, Generator a new email address</Button>
+                                    <Button onClick={generatorNewMail}>Yes, generate new address</Button>
                                 </AlertDialogAction>
                             </AlertDialogFooter>
                         </AlertDialogContent>

@@ -217,7 +217,7 @@ export default ({
                     <div className='py-4 px-2'>
                         <a href='./settings' className={cn('w-full', buttonVariants({ variant: 'outline'}))}>
                             <Settings />
-                            {isCollapsed ? '' : `My Email Address(${accounts.length})`}
+                            {isCollapsed ? '' : `My email addresses (${accounts.length})`}
                         </a>
                     </div>
                 </ResizablePanel>
@@ -238,7 +238,7 @@ export default ({
                                     <span className='sr-only'>Refresh</span>
                                 </Button>
                             </TooltipTrigger>
-                            <TooltipContent>Get the new mails</TooltipContent>
+                            <TooltipContent>Refresh inbox</TooltipContent>
                         </Tooltip>
                         <Tooltip>
                             <TooltipTrigger asChild>
@@ -257,7 +257,7 @@ export default ({
                                     }
                                 </Button>
                             </TooltipTrigger>
-                            <TooltipContent>Copy current mail address</TooltipContent>
+                            <TooltipContent>Copy current email address</TooltipContent>
                         </Tooltip>
                     </div>
                     <Separator />
